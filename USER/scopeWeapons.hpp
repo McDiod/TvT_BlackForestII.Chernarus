@@ -5,3 +5,5 @@
 *   rhs_weap_t5000 = 1;
 *   rhs_weap_m24sws = 1;
 */
+
+rhs_weap_XM2010 = 1;

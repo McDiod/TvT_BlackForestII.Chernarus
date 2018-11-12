@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=445;
+		nextID=461;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=106;
+		nextID=130;
 	};
 	class Camera
 	{
-		pos[]={7524.606,306.94107,2677.7373};
-		dir[]={-0.67783153,-0.47024542,0.56517309};
-		up[]={-0.36117101,0.88253486,0.30114344};
-		aside[]={0.64039618,-1.109438e-007,0.76805043};
+		pos[]={5647.8008,347.09674,8305.8838};
+		dir[]={-0.93216538,-0.33801019,-0.12993853};
+		up[]={-0.33479565,0.94113523,-0.04666793};
+		aside[]={-0.13806251,-3.0093361e-008,0.99045599};
 	};
 };
 binarizationWanted=0;
@@ -36,13 +36,16 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"ace_explosives",
 	"A3_Modules_F",
-	"A3_Modules_F_Curator_Multiplayer"
+	"A3_Modules_F_Curator_Multiplayer",
+	"rhsusf_c_mrzr",
+	"A3_Soft_F_Quadbike_01",
+	"rhs_c_cars"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=10;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -91,6 +94,27 @@ class AddonsMetaData
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="rhsusf_c_mrzr";
+			name="MRZR";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item8
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="rhs_c_cars";
+			name="Tigr vehicles";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -1769,7 +1793,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=15;
 		class Item0
 		{
 			dataType="Layer";
@@ -2012,7 +2036,7 @@ class Mission
 				};
 			};
 			id=127;
-			atlOffset=66.937767;
+			atlOffset=43.701263;
 		};
 		class Item1
 		{
@@ -2057,7 +2081,7 @@ class Mission
 				};
 			};
 			id=176;
-			atlOffset=-3.5353241;
+			atlOffset=2.2093811;
 		};
 		class Item2
 		{
@@ -4504,7 +4528,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5602.269,330.32312,8306.2266};
+								position[]={5610.9497,329.67136,8295.5381};
 								angles[]={0,3.79932,0};
 							};
 							side="East";
@@ -4602,7 +4626,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5605.21,330.21686,8306.1113};
+								position[]={5613.8906,329.55463,8295.4229};
 								angles[]={0,3.79932,0};
 							};
 							side="East";
@@ -4736,7 +4760,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5609.2119,329.90729,8300.7012};
+								position[]={5603.8105,330.18109,8303.3477};
 								angles[]={0,3.8094604,0};
 							};
 							side="East";
@@ -4748,7 +4772,6 @@ class Mission
 							};
 							id=306;
 							type="O_spotter_F";
-							atlOffset=3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4835,7 +4858,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5612.1309,329.81,8301.04};
+								position[]={5606.7295,330.0899,8303.6865};
 								angles[]={0,3.8094604,0};
 							};
 							side="East";
@@ -4933,7 +4956,6 @@ class Mission
 					{
 					};
 					id=305;
-					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4963,6 +4985,7 @@ class Mission
 					dataType="Layer";
 					name="Kommentare";
 					id=379;
+					atlOffset=51.599998;
 				};
 				class Item11
 				{
@@ -5038,7 +5061,7 @@ class Mission
 				};
 			};
 			id=205;
-			atlOffset=-50.82016;
+			atlOffset=-47.007126;
 		};
 		class Item3
 		{
@@ -5417,6 +5440,305 @@ class Mission
 			};
 			id=434;
 			atlOffset=-105.80374;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7258.813,32.218357,3004.8513};
+				angles[]={6.2805147,1.1318635,6.2365503};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[this] execVM ""USER\scripts\addUsMmgEquipment.sqf""}";
+				textures="mud_pnt1";
+			};
+			id=452;
+			type="rhsusf_mrzr4_d";
+			atlOffset=-4.3869019e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_define_mainset";
+					expression="_this setVariable ['rhs_define_mainset', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ODA_MRZR_D";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7252.3994,32.502075,3002.2288};
+				angles[]={6.2791882,1.23777,6.2458701};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[this] execVM ""USER\scripts\addUsSniperEquipment.sqf""}";
+				textures="mud_pnt1";
+			};
+			id=454;
+			type="rhsusf_mrzr4_d";
+			atlOffset=-6.4849854e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_define_mainset";
+					expression="_this setVariable ['rhs_define_mainset', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ODA_MRZR_D";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5597.1528,331.74927,8293.3984};
+				angles[]={6.2527637,2.1916099,6.2463241};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[this] execVM ""USER\scripts\addRusSniperEquipment.sqf""}";
+			};
+			id=456;
+			type="O_Quadbike_01_F";
+			atlOffset=-3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5604.8281,331.68832,8286.9199};
+				angles[]={6.2516122,2.1916099,6.2449627};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{[this] execVM ""USER\scripts\addRusMmgEquipment.sqf""}";
+			};
+			id=460;
+			type="rhs_tigr_m_vdv";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalArmy_type";
+					expression="_this setVariable ['rhs_decalArmy_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Army";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cDecalsTigr4NumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="rhs_decalArmy";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cDecalsTigrRightArmyPlaces,  _this getVariable ['rhs_decalArmy_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_decalPlatoon_type";
+					expression="_this setVariable ['rhs_decalPlatoon_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Army";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_decalPlatoon";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cDecalsTigrRightPlatoonPlaces,  _this getVariable ['rhs_decalPlatoon_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=6;
+			};
 		};
 	};
 	class Connections
