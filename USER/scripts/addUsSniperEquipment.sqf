@@ -19,7 +19,11 @@ params ["_car"];
     ["ACE_RangeCard",1],
     ["ACE_SpottingScope",1],
     ["ACE_Tripod",1],
-    ["ACE_key_west",1]
+    ["ACE_key_west",1],
+    ["ACE_fieldDressing",5],
+    ["ACE_morphine",2],
+    ["ACE_epinephrine",2],
+    ["ACE_salineIV",1]
 ];
 
 {_car addBackpackCargoGlobal _x} forEach [

@@ -14,7 +14,11 @@ params ["_car"];
 {_car addItemCargoGlobal _x} forEach [
     ["grad_axe",1],
     ["ACE_EntrenchingTool",1],
-    ["ACE_key_west",1]
+    ["ACE_key_west",1],
+    ["ACE_fieldDressing",5],
+    ["ACE_morphine",2],
+    ["ACE_epinephrine",2],
+    ["ACE_salineIV",1]
 ];
 
 {_car addBackpackCargoGlobal _x} forEach [
