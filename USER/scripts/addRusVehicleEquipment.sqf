@@ -25,5 +25,5 @@ params ["_car"];
 ];
 
 {_car addBackpackCargoGlobal _x} forEach [
-    ["tf_mr3000_rhs",1]
+    ["tfar_mr3000_rhs",1]
 ];
