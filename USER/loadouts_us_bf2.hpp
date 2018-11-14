@@ -13,6 +13,7 @@ class us_bf2: us_army {
 
 		class Soldier_AR_F: Soldier_AR_F {
             primaryWeapon = "rhs_weap_m249_pip_L";
+            headgear = "rhsusf_lwh_helmet_marpatwd";
             vest = "rhsusf_spc_mg";
             backpack = "rhsusf_assault_eagleaiii_coy";
 		};
