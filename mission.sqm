@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3865;
+		nextID=3873;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=299;
+		nextID=312;
 	};
 	class Camera
 	{
-		pos[]={5640.106,361.47388,8292.1025};
-		dir[]={-0.80605149,-0.50022453,0.31662634};
-		up[]={-0.46564275,0.86585307,0.18291098};
-		aside[]={0.36565223,8.1543112e-007,0.93085903};
+		pos[]={6815.7969,422.88864,5659.5596};
+		dir[]={-0.48408791,-0.48052099,-0.73127735};
+		up[]={-0.26524431,0.87698305,-0.40068507};
+		aside[]={-0.83385646,3.7951395e-008,0.55199283};
 	};
 };
 binarizationWanted=0;
@@ -2309,7 +2309,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			dataType="Layer";
@@ -5909,7 +5909,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6419.4111,385.21353,6567.6006};
-					angle=3.927321;
+					angle=3.9273202;
 					class Attributes
 					{
 						sizeA=90;
@@ -5922,7 +5922,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5875.082,141.64349,4749.2559};
-					angle=1.5649838;
+					angle=1.5649836;
 					class Attributes
 					{
 						sizeA=170;
@@ -12513,16 +12513,119 @@ class Mission
 			id=3864;
 			atlOffset=-0.0030212402;
 		};
+		class Item11
+		{
+			dataType="Layer";
+			name="Zivilisten";
+			class Entities
+			{
+				items=7;
+				class Item0
+				{
+					dataType="Trigger";
+					position[]={6523.063,337.71658,6107.978};
+					angle=2.3400502;
+					class Attributes
+					{
+						sizeA=80;
+						sizeB=200;
+					};
+					id=3866;
+					type="EmptyDetector";
+					atlOffset=15.615723;
+				};
+				class Item1
+				{
+					dataType="Trigger";
+					position[]={7563.7007,229.61127,5132.3687};
+					angle=3.4914455;
+					class Attributes
+					{
+						sizeA=156.09082;
+						sizeB=246.18823;
+					};
+					id=3867;
+					type="EmptyDetector";
+					atlOffset=15.616104;
+				};
+				class Item2
+				{
+					dataType="Trigger";
+					position[]={5869.1885,150.48676,4798.9482};
+					angle=3.0253305;
+					class Attributes
+					{
+						sizeA=156.09082;
+						sizeB=246.18823;
+					};
+					id=3868;
+					type="EmptyDetector";
+					atlOffset=15.616058;
+				};
+				class Item3
+				{
+					dataType="Trigger";
+					position[]={6763.3027,358.58279,5588.3687};
+					angle=2.1764948;
+					class Attributes
+					{
+						sizeA=40;
+						sizeB=40;
+					};
+					id=3870;
+					type="EmptyDetector";
+					atlOffset=15.615845;
+				};
+				class Item4
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={6656.9604,328.43829,5187.1719};
+						angles[]={5.9905047,0,6.0691795};
+					};
+					init="call{[this,15] call grad_civs_fnc_populateArea;}";
+					id=3865;
+					type="Logic";
+				};
+				class Item5
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={6860.6216,321.25049,5577.6104};
+						angles[]={6.0999293,0,6.0263209};
+					};
+					init="call{[this,2] call grad_civs_fnc_populateArea;}";
+					id=3869;
+					type="Logic";
+				};
+				class Item6
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={6699.0688,351.263,6194.2573};
+						angles[]={0.046629332,0,0.0053265258};
+					};
+					init="call{[this,8] call grad_civs_fnc_populateArea;}";
+					id=3871;
+					type="Logic";
+				};
+			};
+			id=3872;
+			atlOffset=-0.90240479;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=53;
+			nextID=57;
 		};
 		class Links
 		{
-			items=53;
+			items=57;
 			class Item0
 			{
 				linkID=0;
@@ -13048,6 +13151,46 @@ class Mission
 				linkID=52;
 				item0=495;
 				item1=121;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=3867;
+				item1=3865;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item54
+			{
+				linkID=54;
+				item0=3868;
+				item1=3865;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item55
+			{
+				linkID=55;
+				item0=3870;
+				item1=3869;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item56
+			{
+				linkID=56;
+				item0=3866;
+				item1=3871;
 				class CustomData
 				{
 					type="Sync";
