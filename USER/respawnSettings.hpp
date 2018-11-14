@@ -13,9 +13,11 @@ bluforInterruptCondition = "false";                                             
 opforInterruptCondition = "false";                                              //Bedingung nach der der Opfor Waverespawn deaktiviert wird
 indepInterruptCondition = "false";                                              //Bedingung nach der der Independent Waverespawn deaktiviert wird
 
-waverespawntimePlayer = 180;                                                     //Spielerrespawnzeit, bevor er der Welle hinzugefügt wird
+/* waverespawntimePlayer = 180;                                                     //Spielerrespawnzeit, bevor er der Welle hinzugefügt wird */
+waverespawntimePlayer = 10;                                                     //Spielerrespawnzeit, bevor er der Welle hinzugefügt wird
 
-waverespawntimeBlu = 300;                                                        //Wellenrespawnzeit Blufor in Sekunden
+/* waverespawntimeBlu = 300;                                                        //Wellenrespawnzeit Blufor in Sekunden */
+waverespawntimeBlu = 10;                                                        //Wellenrespawnzeit Blufor in Sekunden
 waverespawntimeOpf = 300;                                                        //Wellenrespawnzeit Opfor in Sekunden
 waverespawntimeInd = 300;                                                        //Wellenrespawnzeit Independent in Sekunden
 
