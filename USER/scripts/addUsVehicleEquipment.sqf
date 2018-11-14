@@ -27,3 +27,11 @@ params ["_car"];
 {_car addBackpackCargoGlobal _x} forEach [
     ["TFAR_rt1523g_rhs",1]
 ];
+
+{
+    _x params ["_fort","_amount"];
+    [_car,_fort,_amount] call grad_fortifications_fnc_addFort
+} forEach [
+    ["Land_fort_bagfence_long",5],
+    ["Land_fort_bagfence_round",2]
+];
