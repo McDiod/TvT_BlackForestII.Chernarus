@@ -24,7 +24,7 @@ class opforeliminated {
 
 class bluforWinPoints {
     preset = "TIMEOUT";
-    presetParams[] = {3000,"([EAST] call grad_points_fnc_getPoints) < ([WEST] call grad_points_fnc_getPoints)"};
+    presetParams[] = {3000,"([EAST] call grad_points_fnc_getPoints) < ([WEST] call grad_points_fnc_getPoints)",{1800,900,300,60}};
 
     condition = "";
     checkInterval = 0;
@@ -36,7 +36,7 @@ class bluforWinPoints {
 
 class opforWinPoints {
     preset = "TIMEOUT";
-    presetParams[] = {3000,"([EAST] call grad_points_fnc_getPoints) > ([WEST] call grad_points_fnc_getPoints)"};
+    presetParams[] = {3000,"([EAST] call grad_points_fnc_getPoints) > ([WEST] call grad_points_fnc_getPoints)",{1800,900,300,60}};
 
     condition = "";
     checkInterval = 0;
@@ -48,7 +48,7 @@ class opforWinPoints {
 
 class drawPoints {
     preset = "TIMEOUT";
-    presetParams[] = {3000,"([EAST] call grad_points_fnc_getPoints) == ([WEST] call grad_points_fnc_getPoints)"};
+    presetParams[] = {3000,"([EAST] call grad_points_fnc_getPoints) == ([WEST] call grad_points_fnc_getPoints)",{1800,900,300,60}};
 
     condition = "";
     checkInterval = 0;

@@ -7,3 +7,4 @@
 */
 
 rhs_weap_XM2010 = 1;
+rhs_weap_t5000 = 1;
