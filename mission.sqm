@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=312;
+		nextID=325;
 	};
 	class Camera
 	{
-		pos[]={6815.7969,422.88864,5659.5596};
-		dir[]={-0.48408791,-0.48052099,-0.73127735};
-		up[]={-0.26524431,0.87698305,-0.40068507};
-		aside[]={-0.83385646,3.7951395e-008,0.55199283};
+		pos[]={6552.3374,415.81354,5602.917};
+		dir[]={-0.073061369,-0.28182632,0.95668882};
+		up[]={-0.021460259,0.95946234,0.28101194};
+		aside[]={0.99710554,7.3006959e-008,0.076147191};
 	};
 };
 binarizationWanted=0;
@@ -2288,24 +2288,29 @@ class Mission
 {
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0;
-		startWind=0.1;
+		timeOfChanges=3816.437;
+		startWeather=0.19896472;
+		startWind=0.13706949;
+		startWindDir=60;
 		startWaves=0.1;
-		forecastWeather=0;
-		forecastWind=0.1;
+		forecastWeather=0.20177804;
+		forecastWind=0.19896472;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
+		forecastWindDir=80;
 		rainForced=1;
 		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
+		year=2018;
+		month=7;
 		day=28;
-		hour=13;
-		minute=37;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		hour=16;
+		minute=3;
+		startFogBase=-675.07764;
+		forecastFogBase=-658.47729;
+		startFogDecay=0.0071159801;
+		forecastFogDecay=0.01043603;
 	};
 	class Entities
 	{
@@ -5909,7 +5914,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6419.4111,385.21353,6567.6006};
-					angle=3.9273202;
+					angle=3.92732;
 					class Attributes
 					{
 						sizeA=90;
