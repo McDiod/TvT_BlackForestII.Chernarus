@@ -5,6 +5,8 @@ if (!isServer) exitWith {_this remoteExec ["grad_points_fnc_addPoints",2,false]}
 params ["_side","_points",["_category","Other"]];
 private ["_newPoints","_categoriesVarName"];
 
+if (_side == sideUnknown) exitWith {};
+
 switch (_side) do {
     case (WEST): {
         _newPoints = (missionNamespace getVariable ["grad_common_points_west",0]) + _points;
