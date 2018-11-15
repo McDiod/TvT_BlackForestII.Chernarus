@@ -8,7 +8,7 @@ grad_missionsettings_canUseScopes = ([missionConfigFile >> "missionsettings","ca
 [] call grad_missionSetup_fnc_intro;
 [] call grad_missionSetup_fnc_initCivs;
 [] call grad_groupsettings_fnc_setGroupSettings;
-
+if (!isServer) then {[] call GRAD_replay_fnc_init};
 
 [{!isNull player || isDedicated},{
 
