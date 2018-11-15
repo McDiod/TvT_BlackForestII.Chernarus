@@ -14,3 +14,9 @@ class Extended_WeaponAssembled_EventHandlers {
         };
     };
 };
+
+#include "ui_toolkit.hpp"
+#include "baseDefines.hpp"
+#include "baseRsc.hpp"
+
+#include "confirmHint\dialog.hpp"

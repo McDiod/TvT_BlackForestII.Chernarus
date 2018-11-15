@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=364;
+		nextID=390;
 	};
 	class Camera
 	{
@@ -5847,9 +5847,10 @@ class Mission
 				class Item0
 				{
 					dataType="Trigger";
-					position[]={6722.2764,343.45605,5536.7588};
+					position[]={6722.2759,343.45624,5536.7588};
 					class Attributes
 					{
+						name="bf_playAreaTrigger";
 						sizeA=1600;
 						sizeB=3000;
 						isRectangle=1;
@@ -5894,7 +5895,7 @@ class Mission
 				};
 			};
 			id=434;
-			atlOffset=-105.80374;
+			atlOffset=-105.80371;
 		};
 		class Item5
 		{
@@ -5920,7 +5921,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6419.4111,385.21353,6567.6006};
-					angle=3.9273183;
+					angle=3.9273179;
 					class Attributes
 					{
 						sizeA=90;
@@ -5951,7 +5952,7 @@ class Mission
 						position[]={7935.3569,189.74554,5411.5181};
 						angles[]={0.059952058,0,6.0821757};
 					};
-					init="call{[this,""Mogilevka"",30,0.0083,false,[WEST,EAST]] call grad_sectors_fnc_createSector " \n "}";
+					init="call{[this,""Mogilevka"",35,0.01666,false,[WEST,EAST]] call grad_sectors_fnc_createSector}";
 					id=424;
 					type="LocationArea_F";
 				};
@@ -5962,7 +5963,7 @@ class Mission
 					{
 						position[]={6680.9351,331.78009,6571.2671};
 					};
-					init="call{[this,""Pop Ivan"",30,0.0083,false,[WEST,EAST]] call grad_sectors_fnc_createSector}";
+					init="call{[this,""Pop Ivan"",35,0.01666,false,[WEST,EAST]] call grad_sectors_fnc_createSector}";
 					id=425;
 					type="LocationArea_F";
 				};
@@ -5973,7 +5974,7 @@ class Mission
 					{
 						position[]={5855.501,159.81601,5145.248};
 					};
-					init="call{[this,""Nadezhdino"",30,0.0083,false,[WEST,EAST]] call grad_sectors_fnc_createSector " \n "}";
+					init="call{[this,""Nadezhdino"",35,0.01666,false,[WEST,EAST]] call grad_sectors_fnc_createSector}";
 					id=426;
 					type="LocationArea_F";
 				};
