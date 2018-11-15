@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=325;
+		nextID=338;
 	};
 	class Camera
 	{
-		pos[]={6552.3374,415.81354,5602.917};
-		dir[]={-0.073061369,-0.28182632,0.95668882};
-		up[]={-0.021460259,0.95946234,0.28101194};
-		aside[]={0.99710554,7.3006959e-008,0.076147191};
+		pos[]={7246.167,76.453613,2978.2102};
+		dir[]={-0.39705718,-0.65123749,0.64671582};
+		up[]={-0.34073803,0.75887287,0.55498439};
+		aside[]={0.85220283,1.747394e-007,0.52321762};
 	};
 };
 binarizationWanted=0;
@@ -2622,13 +2622,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7214.8896,32.159058,3014.926};
+								position[]={7214.8901,32.159023,3014.926};
 								angles[]={0,0.14742795,0};
 							};
 							side="West";
 							flags=7;
 							class Attributes
 							{
+								init="call{if (isServer) then {[this,true] call grad_aicommand_fnc_setCanUseHighcommand}}";
 								description="Zugführer@Command";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -2721,13 +2722,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7213.5176,32.254208,3014.2832};
+								position[]={7213.5181,32.254177,3014.283};
 								angles[]={0,0.14742795,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
+								init="call{if (isServer) then {[this,true] call grad_aicommand_fnc_setCanUseHighcommand}}";
 								description="Zugführer Ass.@Command";
 								isPlayable=1;
 							};
@@ -4068,13 +4070,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5588.3545,330.78717,8304.7813};
+								position[]={5588.354,330.78717,8304.7813};
 								angles[]={0,0.55197781,0};
 							};
 							side="East";
 							flags=7;
 							class Attributes
 							{
+								init="call{if (isServer) then {[this,true] call grad_aicommand_fnc_setCanUseHighcommand}}";
 								description="Zugführer@Command";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -4167,18 +4170,20 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5586.998,330.82068,8304.2734};
+								position[]={5586.998,330.82071,8304.2734};
 								angles[]={0,0.55197781,0};
 							};
 							side="East";
 							flags=5;
 							class Attributes
 							{
+								init="call{if (isServer) then {[this,true] call grad_aicommand_fnc_setCanUseHighcommand}}";
 								description="Zugführer Ass.@Command";
 								isPlayable=1;
 							};
 							id=267;
 							type="O_Soldier_SL_F";
+							atlOffset=3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -5914,7 +5919,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6419.4111,385.21353,6567.6006};
-					angle=3.92732;
+					angle=3.9273198;
 					class Attributes
 					{
 						sizeA=90;

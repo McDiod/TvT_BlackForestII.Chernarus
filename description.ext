@@ -68,6 +68,12 @@ class CfgGradCivs {
 	debugMode = 0;
 };
 
+class CfgGradAICommand {
+    canReceiveCommandsDefault = 1;
+    canGiveCommandsDefault = 1;
+    canUseHighcommandDefault = 0;
+};
+
 class GRAD_Replay {
     precision = 3;                                    // precision of replay, 5 means every 5 seconds one snapshot (number)
     trackedSides[] = {"west", "east"};    // defines the sides that will be tracked (possible are "west", "east", "independant", "civilian") (array)
@@ -84,6 +90,7 @@ class GRAD_Replay {
 #include "node_modules\grad-fortifications\grad_fortifications.hpp"
 #include "node_modules\@gruppe-adler\replay\ui\defines.hpp"
 #include "node_modules\@gruppe-adler\replay\ui\dialog.hpp"
+#include "node_modules\grad-aicommand\grad_aicommand.hpp"
 
 class RscTitles {
 	#include "node_modules\grad-fortifications\dialog\hint\title.hpp"
@@ -129,6 +136,7 @@ class CfgFunctions {
 	#include "node_modules\grad-fortifications\cfgFunctions.hpp"
 	#include "node_modules\grad-civs\cfgFunctions.hpp"
     #include "node_modules\@gruppe-adler\replay\cfgFunctions.hpp"
+    #include "node_modules\grad-aicommand\cfgFunctions.hpp"
 };
 
 
