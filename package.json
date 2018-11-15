@@ -8,7 +8,8 @@
         }
     ],
 
-    "dependencies": {
+    "dependencies": {        
+        "@gruppe-adler/replay": ">=0.0.1",
         "grad-listbuymenu": ">=0.0.1",
         "grad-fortifications": ">=0.0.1",
         "grad-loadout": ">=0.0.1",

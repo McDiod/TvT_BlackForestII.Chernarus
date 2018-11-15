@@ -16,7 +16,7 @@ class ger_heer_w {
 		backpack = "";
 		headgear = "ARC_GER_Flecktarn_Helmet_simple";
 		nvgoggles = "";
-		radio = "tf_anprc152";
+		radio = "TFAR_anprc152";
 		binoculars = "Binocular";
 		map = "ItemMap";
 		gps = "ItemGPS";
@@ -101,7 +101,7 @@ class ger_heer_w {
         class Soldier_SL_F: Soldier_F {
             uniform  = "ARC_GER_Flecktarn_Uniform_vest";
             headgear = "ARC_GER_Flecktarn_Helmet_Light";
-            backpack = "tf_rt1523g_bwmod";
+            backpack = "TFAR_rt1523g_bwmod";
             addItemsToBackpack[] =  {
 				LIST_2("rhs_mag_m18_green"),
 				LIST_2("rhs_mag_m18_purple"),
@@ -125,7 +125,7 @@ class ger_heer_w {
 
 	class Rank {
 		class LIEUTENANT {
-            backpack = "tf_rt1523g_big_bwmod";
+            backpack = "TFAR_rt1523g_big_bwmod";
             headgear = "ARC_GER_Flecktarn_Milcap";
 		};
 	};
