@@ -43,15 +43,16 @@ private _plane = createVehicle [
 _plane setVariable ["bf_paradropVehicle",_paradropVehicle, true];
 
 _plane setVehicleAmmo 0;
-_plane flyInHeight 400;
-_plane setPos (_plane modelToWorld [0,0,400]);
+_plane flyInHeight 150;
+_plane setPos (_plane modelToWorld [0,0,150]);
 _plane setDir (_plane getDir _targetPos);
-_plane setVelocityModelSpace [0,300,0];
+_plane setVelocityModelSpace [0,100,0];
 
 createVehicleCrew _plane;
 (group (driver _plane)) setCombatMode "BLUE";
 (group (driver _plane)) setBehaviour "CARELESS";
 
+{_x addCuratorEditableObjects [[_plane],true]} forEach [loggedCurator,votedCurator];
 
 private _group = group (driver _plane);
 
@@ -66,32 +67,10 @@ _lowerWaypoint setWaypointStatements ["true", "
 private _dropWaypoint = _group addWaypoint [_targetPos, 0];
 _dropWaypoint setWaypointType "MOVE";
 _dropWaypoint setWaypointCompletionRadius 80;
-_dropWaypoint setWaypointStatements ["true", "this call bf_fnc_paradropSuccess"];
+_dropWaypoint setWaypointStatements ["true", "this spawn bf_fnc_paradropSuccess"];
 
 private _exitWaypointPos = _targetPos getPos [10000,_startPos getDir _targetPos];
 private _exitWaypoint = _group addWaypoint [_exitWaypointPos,0];
 _exitWaypoint setWaypointType "MOVE";
 _exitWaypoint setWaypointCompletionRadius 500;
 _exitWaypoint setWaypointStatements ["true", "this call bf_fnc_paradropExit"];
-
-// Create track marker for plane
-private _marker = createMarkerLocal [str _plane, position _plane];
-_marker setMarkerTypeLocal "mil_arrow";
-_marker setMarkerColorLocal "ColorGreen";
-_marker setMarkerTextLocal "Paradrop";
-
-[
-    {
-        params ["_args", "_pfHandle"];
-        _args params ["_plane", "_marker"];
-        if (!alive _plane || {isNull _plane}) exitWith {
-            [_pfHandle] call CBA_fnc_removePerFrameHandler;
-            deleteMarkerLocal _marker;
-        };
-
-        _marker setMarkerPosLocal (position _plane);
-        _marker setMarkerDirLocal (direction _plane);
-    },
-    0,
-    [_plane, _marker]
-] call CBA_fnc_addPerFrameHandler;

@@ -1,11 +1,14 @@
 #include "\a3\editor_f\Data\Scripts\dikCodes.h"
-params [["_unit",objNull],["_side",sideUnknown],["_vehicleClass","B_MRAP_01_F"],["_area",[[worldSize/2,worldSize/2],worldSize,worldSize,0,true]]];
+params [["_unit",objNull],["_side",sideUnknown],["_vehicleClass","B_MRAP_01_F"],["_planeClass","RHS_C130J"],["_planeSpawnPos",[0,0,0]],["_area",[[worldSize/2,worldSize/2],worldSize,worldSize,0,true]]];
 
 openMap [true,true];
 bf_paradropArea = _area;
 bf_paradropSide = _side;
 bf_paradropColor = [_side,true] call BIS_fnc_sideColor;
 bf_paradropUnit = _unit;
+bf_paradropVehicleClass = _vehicleClass;
+bf_paradropPlaneClass = _planeClass;
+bf_paradropPlaneSpawnPos = _planeSpawnPos;
 
 [true,"CHOOSE DROPZONE (LMOUSE)","CONFIRM (ENTER)"] call bf_fnc_twoLineHint;
 
@@ -40,6 +43,10 @@ bf_paradropKeydown = (findDisplay 46) displayAddEventHandler ["KeyDown", {
         bf_paradropKeydown = nil;
         bf_paradropChooseclick = nil;
         bf_paradropUnit = nil;
+        bf_paradropVehicleClass = nil;
+        bf_paradropPlaneClass = nil;
+        bf_paradropPlaneSpawnPos = nil;
+        deleteMarkerLocal "bf_paradropLocalMarker";
         openMap [false,false];
         [false] call bf_fnc_twoLineHint;
     };
@@ -59,7 +66,7 @@ bf_paradropKeydown = (findDisplay 46) displayAddEventHandler ["KeyDown", {
         } else {
             bf_paradropUnit setVariable ["bf_paradropCount",(bf_paradropUnit getVariable ["bf_paradropUnit",0]) + 1,true];
 
-            [_pos,[0,0,0]] call bf_fnc_spawnParadropPlane;
+            [_pos,bf_paradropPlaneSpawnPos,bf_paradropVehicleClass,bf_paradropPlaneClass] call bf_fnc_spawnParadropPlane;
             [] call _fnc_close;
         };
     };

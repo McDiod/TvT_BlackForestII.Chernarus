@@ -7,15 +7,15 @@ private _plane = (vehicle _this);
 private _paradropVehicle = _plane getVariable ["bf_paradropVehicle", objNull];
 if !(local _paradropVehicle) exitWith {};
 
-_plane flyInHeight 1000;
+_plane flyInHeight 200;
 
 /* [objNull, "Abwurf erfolgreich"] call BIS_fnc_showCuratorFeedbackMessage; */
 
-private _bbr = boundingBoxReal _plane;
-private _p1 = _bbr select 0;
-private _p2 = _bbr select 1;
-private _maxWidth = abs ((_p2 select 0) - (_p1 select 0));
-private _dropPos = _plane modelToWorld [_maxWidth + 10 ,0,0];
+
+
+private _dropPos = _plane modelToWorldWorld [0,20,-10];
+
+sleep 2;
 
 private _para = createVehicle ["B_Parachute_02_F", [0,0,0], [], 0, "NONE"];
 _para setPosASL _dropPos;
