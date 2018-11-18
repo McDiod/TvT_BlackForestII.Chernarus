@@ -24,7 +24,8 @@ params ["_car"];
     ["ACE_fieldDressing",5],
     ["ACE_morphine",2],
     ["ACE_epinephrine",2],
-    ["ACE_salineIV",1]
+    ["ACE_salineIV",1],
+    ["ACE_DAGR",1]
 ];
 
 {_car addBackpackCargoGlobal _x} forEach [

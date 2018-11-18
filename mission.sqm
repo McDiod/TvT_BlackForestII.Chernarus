@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3950;
+		nextID=3952;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=390;
+		nextID=403;
 	};
 	class Camera
 	{
-		pos[]={7314.2139,64.174629,2988.6648};
-		dir[]={-0.86506385,-0.38953555,0.3162148};
-		up[]={-0.36589259,0.92099732,0.13374755};
-		aside[]={0.34333381,-4.7800131e-007,0.93924868};
+		pos[]={6537.5703,439.73141,5617.5303};
+		dir[]={-0.20690824,-0.34259921,-0.91643351};
+		up[]={-0.075453386,0.93947518,-0.33419624};
+		aside[]={-0.9754675,3.9421138e-008,0.22023608};
 	};
 };
 binarizationWanted=0;
@@ -335,7 +335,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=32;
+									items=33;
 									class Item0
 									{
 										class data
@@ -784,6 +784,20 @@ class CustomAttributes
 											value="tfar_givemicrodagrtosoldier";
 										};
 									};
+									class Item32
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_advanced_ballistics_enabled";
+										};
+									};
 								};
 							};
 						};
@@ -800,7 +814,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=32;
+									items=33;
 									class Item0
 									{
 										class data
@@ -2222,6 +2236,51 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item32
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
@@ -5921,7 +5980,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6419.4111,385.21353,6567.6006};
-					angle=3.9273179;
+					angle=3.9273174;
 					class Attributes
 					{
 						sizeA=90;
