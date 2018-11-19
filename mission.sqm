@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=482;
+		nextID=496;
 	};
 	class Camera
 	{
@@ -2396,12 +2396,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1756.943,307.71533,5586.729};
+						position[]={5357.6162,328.33295,5079.5601};
 					};
 					name="loggedCurator";
 					id=96;
 					type="ModuleCurator_F";
-					atlOffset=93.184998;
+					atlOffset=93.18515;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2507,12 +2507,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1755.8361,239.10545,5690.25};
-						angles[]={6.0857887,0,6.2418733};
+						position[]={5356.5093,267.41699,5183.0811};
+						angles[]={5.8238144,0,6.00524};
 					};
 					name="votedCurator";
 					id=113;
 					type="ModuleCurator_F";
+					atlOffset=0.00018310547;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2618,15 +2619,15 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1759.0103,233.97386,5488.4243};
+						position[]={5359.6836,277.51138,4981.2554};
 					};
 					id=120;
 					type="ModuleSlingload_F";
-					atlOffset=38.748199;
+					atlOffset=38.748352;
 				};
 			};
 			id=127;
-			atlOffset=43.701294;
+			atlOffset=57.329163;
 		};
 		class Item1
 		{
@@ -16606,13 +16607,14 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1643.88,241.73337,5690.8804};
-						angles[]={6.0275683,0,0.062584557};
+						position[]={5244.5532,303.73358,5183.7114};
+						angles[]={6.0238256,0,5.9686556};
 					};
 					isPlayer=1;
 					isPlayable=1;
 					id=3957;
 					type="VirtualSpectator_F";
+					atlOffset=0.00015258789;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16717,13 +16719,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1643.88,214.25725,5591.2344};
-						angles[]={6.0338192,0,6.2658529};
+						position[]={5244.5532,274.69012,5084.0654};
+						angles[]={6.0819468,0,5.9119101};
 					};
 					isPlayable=1;
 					id=3958;
 					type="VirtualSpectator_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16828,13 +16830,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1644.4337,190.78087,5489.9272};
-						angles[]={6.1232314,0,0.042639159};
+						position[]={5245.1069,264.57324,4982.7583};
+						angles[]={0.12599742,0,6.0615535};
 					};
 					isPlayable=1;
 					id=3959;
 					type="VirtualSpectator_F";
-					atlOffset=3.0517578e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16936,7 +16938,7 @@ class Mission
 				};
 			};
 			id=3956;
-			atlOffset=2.2697601;
+			atlOffset=7.4489746;
 		};
 	};
 	class Connections

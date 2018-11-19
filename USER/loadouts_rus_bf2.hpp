@@ -36,7 +36,7 @@ class rus_bf2: rus_msv_w {
             headgear = "rhs_Booniehat_digi";
             vest = "rhs_6b23_digi";
             addItemsToVest[] = {
-				LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+				LIST_2("rhs_30Rnd_545x39_AK")
 			};
         };
 
@@ -44,7 +44,7 @@ class rus_bf2: rus_msv_w {
             headgear = "rhs_Booniehat_digi";
             vest = "rhs_6b23_digi";
             addItemsToVest[] = {
-				LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+				LIST_2("rhs_30Rnd_545x39_AK")
 			};
         };
     };
