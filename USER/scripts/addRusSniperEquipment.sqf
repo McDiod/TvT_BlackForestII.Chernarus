@@ -15,17 +15,17 @@ params ["_car"];
     ["ACE_optic_LRPS_2D",1],
     ["rhs_acc_harris_swivel",1],
     ["ACE_VectorDay",1],
-    ["ACE_ATragMX",1],
-    ["ACE_Kestrel4500",1],
-    ["ACE_RangeCard",1],
+    ["ACE_ATragMX",2],
+    ["ACE_Kestrel4500",2],
+    ["ACE_RangeCard",2],
+    ["ACE_DAGR",2]
     ["ACE_SpottingScope",1],
     ["ACE_Tripod",1],
     ["ACE_key_east",1],
     ["ACE_fieldDressing",5],
     ["ACE_morphine",2],
     ["ACE_epinephrine",2],
-    ["ACE_salineIV",1],
-    ["ACE_DAGR",1]
+    ["ACE_salineIV",1]
 ];
 
 {_car addBackpackCargoGlobal _x} forEach [
