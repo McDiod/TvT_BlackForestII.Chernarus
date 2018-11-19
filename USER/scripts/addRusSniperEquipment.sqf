@@ -18,7 +18,7 @@ params ["_car"];
     ["ACE_ATragMX",2],
     ["ACE_Kestrel4500",2],
     ["ACE_RangeCard",2],
-    ["ACE_DAGR",2]
+    ["ACE_DAGR",2],
     ["ACE_SpottingScope",1],
     ["ACE_Tripod",1],
     ["ACE_key_east",1],
